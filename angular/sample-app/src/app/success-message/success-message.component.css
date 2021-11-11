@@ -1,0 +1,9 @@
+.success-message-on {
+  cursor: pointer;
+  color: green;
+}
+
+.success-message-off {
+  cursor: pointer;
+  color: blueviolet;
+}
