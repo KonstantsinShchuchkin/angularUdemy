@@ -18,10 +18,10 @@
   {{ isToggled === true ? "Hide" : "Show" }} details
 </button>
 <p [ngStyle]="{ color: getColor() }">Hello</p>
-<p
+<div
   *ngFor="let log of buttonLogs; let i = index"
   [ngStyle]="{ backgroundColor: i > 4 ? 'blue' : '' }"
   [ngClass]="{ fifthLog: i > 4 }"
 >
   {{ log }}
-</p>
+</div>

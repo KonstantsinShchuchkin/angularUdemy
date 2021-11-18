@@ -46,13 +46,14 @@ export class ServersComponent implements OnInit {
   onDisplayDetails() {
     this.isToggled = !this.isToggled;
     this.buttonLogs.push(`Button is clicked at ${new Date()}`);
+    this.buttonLogs.length > 20 ? (this.buttonLogs = []) : {};
   }
 
   getColor() {
-    return this.isToggled ? '' : 'white';
+    return this.isToggled ? 'transparent' : 'white';
   }
 
   getLogColor() {
-    return this.buttonLogs.length > 4 ? 'blue' : '';
+    return this.buttonLogs.length > 4 ? 'blue' : 'transparent';
   }
 }
